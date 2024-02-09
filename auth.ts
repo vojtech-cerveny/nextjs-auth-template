@@ -7,12 +7,12 @@ import type { NextAuthConfig, Session, User } from "next-auth";
 
 const prisma = new PrismaClient();
 export const config: NextAuthConfig = {
-  theme: {
-    logo: "/icons/login.svg",
-  },
   providers: [Google],
   adapter: PrismaAdapter(prisma),
   trustHost: true,
+  // theme: {
+  //   logo: "/icons/login.svg",
+  // },
   // callbacks: {
   //   authorized({ request, auth }) {
   //     const { pathname } = request.nextUrl
