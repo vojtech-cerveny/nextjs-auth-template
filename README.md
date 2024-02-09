@@ -14,13 +14,13 @@ This is basic boilerplate for NextJS (Typescript) + Prisma + Auth.js (GoogleAuth
 
 ## Setup
 
+1. Setup GoogleAuth - follow [official documentation](https://next-auth.js.org/providers/google)
 1. `mv .env.example .env` - and fill environment variables
-   - You need to create app in console.google.com and create OAuth credentials
-2. Run docker image with database
+1. Run docker image with database
    - `docker compose up -d`
-3. Run script to initialize tables for NextAuth
+1. Run script to initialize tables for NextAuth
    - `npx prisma generate && npx prisma migrate dev`
-4. Basic npm stuff
+1. Basic npm stuff
    - Install dependencies - `npm install`
    - Run server - `npm run dev`
 
