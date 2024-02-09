@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  template-db:
+    container_name: template-db
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=litteBunny
+      - POSTGRES_PASSWORD=hopHopHop
+    ports:
+      - "6543:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data

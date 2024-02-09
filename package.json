@@ -1,0 +1,45 @@
+{
+  "name": "nextjs-prisma-auth-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^1.3.3",
+    "@prisma/client": "^5.9.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.323.0",
+    "next": "14.1.0",
+    "next-auth": "^5.0.0-beta.9",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss": "^8",
+    "prettier": "^3.2.2",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "prisma": "^5.8.1",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,css,md,tsx,ts}": "npm run format"
+  }
+}
