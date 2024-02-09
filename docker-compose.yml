@@ -5,7 +5,7 @@ services:
     image: postgres:14.1-alpine
     restart: always
     environment:
-      - POSTGRES_USER=litteBunny
+      - POSTGRES_USER=littleBunny
       - POSTGRES_PASSWORD=hopHopHop
     ports:
       - "6543:5432"
